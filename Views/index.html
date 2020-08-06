@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="https://static.invisionapp-cdn.com/spa/cfprojects/common/img/favicon-16x16.2648d8282b.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="https://static.invisionapp-cdn.com/spa/cfprojects/common/img/favicon-32x32.94899e98c6.png" sizes="32x32" />
+	<title>Sigma</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="public/styles/index.css" >
+</head>
+<body>
+	<div class="container h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-sm-8 align-self-center text-center"><br>
+            	<img src="https://sigma-studios.s3-us-west-2.amazonaws.com/test/sigma-logo.png"><br>	          
+            	<h3><strong>Prueba de desarrollo Sigma</strong></h3><br>
+            	<p>DESARROLLADO POR <strong>JHOAN SEBASTIAN MONTENEGRO TABORDA</strong></p>
+            </div>
+            <div class="col-sm-12 col-md-6" id="imagen">
+           		<img src="https://sigma-studios.s3-us-west-2.amazonaws.com/test/sigma-image.png" width="100%">	 
+			</div>
+			<div class="card col-sm-12 col-md-5 p-3 mb-5" id="card" >
+				<div class="alert alert-success text-center" id="alert" style="display: none;"></div>
+				<div id="disabled">
+					<div class="container h-100">
+	      			  	<div class="row justify-content-center h-100">
+	           				<div class="col-sm-8 align-self-center text-center">
+	           			 		<img src="https://www.dropbox.com/s/4tti4uqg8qlaeb4/spinning-circles.svg?raw=1">
+	           			 	</div>
+           				</div>
+           			</div>
+           		</div>		
+				<form class="card-body form-group" id="form-contacto">
+					<div class="form-group">
+						<label><strong>Departamento</strong>*</label>
+						<select id="departamentos" name="departamentos" class="form-control required">
+							<option value="">Seleccione</option>
+						</select>
+						<label class="error" id="departamentos-error"></label>
+					</div>
+					<div class="form-group">
+						<label><strong>Ciudad</strong>*</label>
+						<select id="ciudades" name="ciudades" class="form-control required" disabled>
+							<option value="">Seleccione</option>
+						</select>
+						<label class="error" id="ciudades-error"></label>
+					</div>
+					<div class="form-group">
+						<label><strong>Nombre</strong>*</label> 
+						<input type="text" placeholder="Jhoan Montenegro" class="form-control" name="nombre" id="nombre">
+						<label class="error" id="nombre-error"></label>
+					</div>
+					<div class="form-group">
+						<label><strong>Email</strong>*</label>
+						<input type="email" placeholder="jsebas030997@email.com" class="form-control" name="email" id="email">
+						<label class="error" id="email-error"></label>
+					</div>
+					<div class="form-group col-md-12 col-sm-12">
+						<div class="col-md-4 offset-4">
+							<button class="btn btn-group rounded" id="button">Enviar</button>
+						</div>
+						
+					</div>			
+				</form>
+			</div>
+        </div>
+    </div> 
+</body>
+<footer>
+		<!-- scripts -->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="public/plugins/jquery-validation/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="public/plugins/jquery-validation/additional-methods.min.js"></script>
+	<script type="text/javascript" src="public/plugins/jquery-validation/localization/messages_es.min.js"></script>
+	<script type="text/javascript" src="public/scripts/validate.js"></script>
+	<script type="text/javascript" src="public/scripts/index.js"></script>
+</footer>
+</html>
