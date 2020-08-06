@@ -76,10 +76,10 @@ $(document).ready(function () {
 	        $("#nombre").focus();       
 	        return false;
 	    }
-	    if($("#gmail").val() == ""){
-	    	$("#gmail-error").show();
-	    	$("#gmail-error").html("Por favor escribe tu gmail");
-	        $("#gmail").focus();
+	    if($("#email").val() == ""){
+	    	$("#email-error").show();
+	    	$("#email-error").html("Por favor escribe tu email");
+	        $("#email").focus();
 	        return false;
 	    }
 
@@ -104,7 +104,7 @@ $(document).ready(function () {
 				$("#departamentos").val("");
 				$("#ciudades").val("");
 				$("#nombre").val("");
-				$("#gmail").val("");
+				$("#email").val("");
 				$(".error").hide();
 
 				setTimeout(function() {
@@ -119,8 +119,8 @@ $(document).ready(function () {
 		$("#nombre-error").hide();
 	});
 
-	$("#gmail").keyup(function(){
-		$("#gmail-error").hide();
+	$("#email").keyup(function(){
+		$("#email-error").hide();
 	});
 
 	function configureLoadingScreen(screen) {
